@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+*.rar
+*.zip
+.DS_Store
+Thumbs.db
+.expo/
+*.tsbuildinfo

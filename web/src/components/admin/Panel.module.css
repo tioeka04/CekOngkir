@@ -1,0 +1,80 @@
+.panel {
+  padding: 26px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header .title {
+  margin: 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-light);
+  border-radius: 99px;
+}
+
+.empty {
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.chart {
+  width: 100%;
+  height: 350px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 400px;
+  padding-right: 4px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.review {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.reviewTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.stars {
+  font-weight: 700;
+  color: var(--star);
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}

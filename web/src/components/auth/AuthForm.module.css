@@ -1,0 +1,96 @@
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 40px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #5b6af0 0%, #7c8bf5 100%);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 36px 40px 40px;
+}
+
+.toggle {
+  text-align: center;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.toggle button {
+  padding: 0 0 0 6px;
+  border: none;
+  background: none;
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.toggle button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 48px 24px 32px;
+  }
+  .body {
+    padding: 28px 24px 32px;
+  }
+}
