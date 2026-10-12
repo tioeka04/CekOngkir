@@ -36,7 +36,7 @@ export class ReviewRepository {
     if (error) throw new UpstreamError('Database', error);
 
     return (data as ReviewRow[]).map((row) => ({
-      id: row.id,
+      id: String(row.id),
       rating: row.rating,
       comment: row.comment ?? '',
       createdAt: row.created_at,

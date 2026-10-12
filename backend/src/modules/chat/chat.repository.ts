@@ -23,7 +23,7 @@ export interface NewChatTurn {
 const SESSION_SCAN_LIMIT = 500;
 
 const toTurn = (row: ChatRow): ChatTurn => ({
-  id: row.id,
+  id: String(row.id),
   sessionId: row.session_id,
   userMessage: row.user_message,
   botReply: row.bot_reply ?? '',
