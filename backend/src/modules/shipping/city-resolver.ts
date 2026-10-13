@@ -35,6 +35,10 @@ const CITY_ALIASES: Record<string, [search: string, display: string]> = {
 const CACHE_TTL_MS = 60 * 60 * 1000;
 const lower = (value: string) => value.toLowerCase().trim();
 
+/** The API returns names in capitals ("SURABAYA"); show them as "Surabaya". */
+export const toTitleCase = (value: string) =>
+  value.toLowerCase().replace(/(^|\s)\S/g, (letter) => letter.toUpperCase());
+
 /**
  * Picks the most relevant destination for a search term:
  * exact city match → city starting with the term (shortest first) → any partial match.
@@ -75,7 +79,7 @@ export class CityResolver {
 
     const destinations = await this.client.searchDestinations(searchTerm);
     const match = pickBestDestination(destinations, searchTerm);
-    const value = match ? { id: match.id, name: alias ? alias[1] : match.cityName } : null;
+    const value = match ? { id: match.id, name: alias ? alias[1] : toTitleCase(match.cityName) } : null;
 
     logger.debug({ input: cityName, resolved: value }, 'City resolved');
     this.cache.set(key, { value, expiresAt: Date.now() + CACHE_TTL_MS });

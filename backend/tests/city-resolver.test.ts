@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { CityResolver, pickBestDestination } from '../src/modules/shipping/city-resolver';
+import { CityResolver, pickBestDestination, toTitleCase } from '../src/modules/shipping/city-resolver';
 import type { Destination } from '../src/modules/shipping/rajaongkir.client';
 
 const destination = (id: number, cityName: string, districtName = ''): Destination => ({
@@ -58,5 +58,11 @@ describe('CityResolver', () => {
   it('returns null for unknown cities', async () => {
     const resolver = new CityResolver({ searchDestinations: vi.fn().mockResolvedValue([]) });
     expect(await resolver.resolve('Gotham')).toBeNull();
+  });
+});
+
+describe('toTitleCase', () => {
+  it('converts API capitals to readable names', () => {
+    expect(toTitleCase('KOTA BANDAR LAMPUNG')).toBe('Kota Bandar Lampung');
   });
 });

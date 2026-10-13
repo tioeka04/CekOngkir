@@ -19,7 +19,7 @@ const envSchema = z.object({
   SUPABASE_ANON_KEY: z.string().min(1),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
   GROQ_API_KEY: z.string().min(1),
-  GROQ_MODEL: z.string().default('llama-3.3-70b-versatile'),
+  GROQ_MODEL: z.string().default('openai/gpt-oss-120b'),
   RAJAONGKIR_API_KEY: z.string().min(1),
   ADMIN_EMAILS: csv.transform((emails) => emails.map((email) => email.toLowerCase())),
   TELEGRAM_BOT_TOKEN: z.string().optional(),
