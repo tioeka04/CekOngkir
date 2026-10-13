@@ -3,7 +3,7 @@ import { translate, type Language } from '../i18n/translate';
 import { safeStorage } from '../utils/storage';
 import { LanguageContext, type LanguageContextValue } from './language-context';
 
-const STORAGE_KEY = 'skuy.language';
+const STORAGE_KEY = 'cekongkirai.language';
 
 function loadInitialLanguage(): Language {
   return safeStorage.get(STORAGE_KEY) === 'en' ? 'en' : 'id';

@@ -1,5 +1,5 @@
 export const id = {
-  'brand.name': 'Skuy Ongkir',
+  'brand.name': 'CekOngkirAI',
   'common.back': 'Kembali',
   'common.loading': 'Memuat…',
 

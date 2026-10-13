@@ -1,8 +1,8 @@
-# 📦 Skuy Ongkir
+# 📦 CekOngkirAI
 
 **An AI shipping-cost assistant for Indonesia.** Chat naturally ("kirim 2kg dari Jakarta ke Bali, yang termurah") and get live rates from JNE, POS, TIKI, SiCepat and AnterAja, in a web app, a mobile app and a Telegram bot, all backed by one REST API.
 
-[![CI](https://github.com/OWNER/skuy-ongkir-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/skuy-ongkir-ai/actions/workflows/ci.yml)
+[![CI](https://github.com/tioeka04/CekOngkir/actions/workflows/ci.yml/badge.svg)](https://github.com/tioeka04/CekOngkir/actions/workflows/ci.yml)
 
 <!-- Add screenshots to docs/screenshots and uncomment:
 ![Chat](docs/screenshots/chat.png) ![Admin](docs/screenshots/admin.png) -->

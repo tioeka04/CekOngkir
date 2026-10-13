@@ -5,7 +5,7 @@ import type { AuthPayload, AuthSession, User } from '../api/types';
 import { safeStorage } from '../utils/storage';
 import { AuthContext, type AuthContextValue, type AuthStatus } from './auth-context';
 
-const STORAGE_KEY = 'skuy.auth';
+const STORAGE_KEY = 'cekongkirai.auth';
 
 function loadStoredSession(): AuthSession | null {
   const raw = safeStorage.get(STORAGE_KEY);

@@ -40,7 +40,7 @@ export function AuthScreen() {
               <View style={styles.logo}>
                 <Ionicons name="chatbubble-ellipses-outline" size={32} color={colors.onPrimary} />
               </View>
-              <Text style={styles.title}>Skuy Ongkir</Text>
+              <Text style={styles.title}>CekOngkirAI</Text>
               <Text style={styles.subtitle}>
                 {t(isRegister ? 'auth.subtitleRegister' : 'auth.subtitleLogin')}
               </Text>

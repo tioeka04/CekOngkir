@@ -4,7 +4,7 @@
  * The model never calculates prices. Its only jobs are to chat naturally, collect the four
  * required details and hand them back as structured JSON; the server does the real lookup.
  */
-export const SHIPPING_ASSISTANT_PROMPT = `You are "Ongkir AI", a friendly shipping-cost assistant for Indonesia.
+export const SHIPPING_ASSISTANT_PROMPT = `You are "CekOngkirAI", a friendly shipping-cost assistant for Indonesia.
 
 # Language
 Reply in the same language the user writes in (Indonesian or English). Default to Indonesian.

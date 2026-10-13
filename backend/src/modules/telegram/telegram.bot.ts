@@ -67,7 +67,7 @@ export class TelegramGateway {
     if (!text) return;
 
     if (text === '/start') {
-      await this.bot.sendMessage(chatId, 'Halo! Saya Ongkir AI. Mau cek ongkir ke mana hari ini?');
+      await this.bot.sendMessage(chatId, 'Halo! Saya CekOngkirAI. Mau cek ongkir ke mana hari ini?');
       return;
     }
 

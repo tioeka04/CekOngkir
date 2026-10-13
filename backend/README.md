@@ -1,4 +1,4 @@
-# Skuy Ongkir: Backend
+# CekOngkirAI: Backend
 
 Express 5 + TypeScript REST API. Contract: [../docs/API.md](../docs/API.md). Design notes: [../docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 

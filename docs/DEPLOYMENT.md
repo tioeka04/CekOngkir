@@ -19,7 +19,7 @@ Stack: **Supabase** (database + auth) · **Render** (backend) · **Vercel** (web
    | `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | from step 1 |
    | `GROQ_API_KEY`, `RAJAONGKIR_API_KEY` | your keys |
    | `ADMIN_EMAILS` | your email |
-   | `CORS_ORIGINS` | your Vercel URL, e.g. `https://skuy-ongkir.vercel.app` (comma-separate several) |
+   | `CORS_ORIGINS` | your Vercel URL, e.g. `https://cekongkirai.vercel.app` (comma-separate several) |
    | `TELEGRAM_BOT_TOKEN` | leave empty (see below) |
 
 4. Deploy, then open `https://<your-service>.onrender.com/api/health`; it should return `{"status":"ok"}`.

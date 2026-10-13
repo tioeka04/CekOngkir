@@ -1,7 +1,7 @@
 import type { TranslationKey } from './id';
 
 export const en: Record<TranslationKey, string> = {
-  'brand.name': 'Skuy Ongkir',
+  'brand.name': 'CekOngkirAI',
   'common.back': 'Back',
   'common.loading': 'Loading…',
 

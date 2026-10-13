@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Skuy Ongkir",
-    "slug": "skuy-ongkir",
+    "name": "CekOngkirAI",
+    "slug": "cekongkirai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

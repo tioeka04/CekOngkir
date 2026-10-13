@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: skuy-ongkir-api
+    name: cekongkirai-api
     runtime: node
     plan: free
     rootDir: backend

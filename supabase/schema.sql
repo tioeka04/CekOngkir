@@ -1,4 +1,4 @@
--- Skuy Ongkir database schema.
+-- CekOngkirAI database schema.
 -- Run this once in Supabase → SQL Editor. It is idempotent, so it is safe to re-run
 -- and also upgrades the tables of the original student version.
 

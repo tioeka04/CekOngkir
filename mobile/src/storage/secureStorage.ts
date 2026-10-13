@@ -2,7 +2,7 @@ import * as SecureStore from 'expo-secure-store';
 
 import type { AuthSession } from '../types/api';
 
-const SESSION_KEY = 'skuy.session';
+const SESSION_KEY = 'cekongkirai.session';
 
 function isAuthSession(value: unknown): value is AuthSession {
   if (typeof value !== 'object' || value === null) return false;

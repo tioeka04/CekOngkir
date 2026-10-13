@@ -1,7 +1,7 @@
 {
-  "name": "skuy-ongkir-backend",
+  "name": "cekongkirai-backend",
   "version": "1.0.0",
-  "description": "REST API for Skuy Ongkir - an AI shipping-cost assistant for Indonesia",
+  "description": "REST API for CekOngkirAI - an AI shipping-cost assistant for Indonesia",
   "private": true,
   "main": "dist/server.js",
   "engines": {

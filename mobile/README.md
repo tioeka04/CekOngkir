@@ -1,7 +1,7 @@
-# Skuy Ongkir - Mobile
+# CekOngkirAI - Mobile
 
-Expo / React Native (TypeScript) client for Skuy Ongkir, an AI assistant that compares
-Indonesian courier shipping costs through chat. It talks to the Skuy Ongkir backend
+Expo / React Native (TypeScript) client for CekOngkirAI, an AI assistant that compares
+Indonesian courier shipping costs through chat. It talks to the CekOngkirAI backend
 (`../backend`, contract in `../docs/API.md`).
 
 Features: email login/register with silent token refresh, AI chat with server-side history,
